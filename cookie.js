@@ -13,7 +13,7 @@ http.createServer(function(request, response){
             'tasty_cookie=strawberry',
             `Permanent=cookies; Max-Age=${60*60*24*30}`,  // 영속적인 쿠키의 지속시간을 확인하는 방법
             'Secure=Secure; Secure',            //https로만 접속을 했을 때, 해당 쿠기를 전송
-            'HttpOnly=HttpOnly; HttpOnly',      //    
+            'HttpOnly=HttpOnly; HttpOnly',      // http만 적용되도록, 자바스크립트 같은 CSS을 막는 방법 
             'Path=Path; Path=/cookie',    //path에 들어가는 방법을 제시
             'Doamin=Domain; Domain=test.o2.org' //
         ]
